@@ -1,24 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
+    <title>Projeto 1 - Cards</title>
+    <link rel="shortcut icon" href="img/logo-site.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/projeto1.css">
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto 1</title>
-    <link rel="shortcut icon" href="img/logo-site.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styleP1.css">
+    <!-- SEO -->
+    <meta name="author" content="João Guilherme">
+    <meta name="description" content="Cards web feito com html, css e javascript.">
+    <meta name="keywords" content="Cards web, html, css">
+    <!-- SMO -->
+    <meta property="og:title" content="Portifólio do João">
+    <meta property="og:site_name" content="João Dev">
+    <meta property="og:description" content="Cards web feito com html, css e javascript.">
+    <meta property="og:url" content="https://joaodev.site">
+    <meta property="og:image" content="img/Projeto1.jpeg">
+    <meta property="og:image:type" content="image/jpeg">
 </head>
 <body>
-    <header id="header">
+    <header>
         <div class="head">
             <div class="inicio">
-                <img src="img/logo.svg" alt="logo do site">
-                <a href="#" class="icon" onclick="menu()" id="icon"><img src="img/menu.svg" alt="icone do menu"></a>
+                <a href="#"><img class="logo" src="img/logo.svg" alt="logo do site"></a>
+                <img class="icon" src="img/menu.svg" alt="icone do menu sanduiche">
             </div>
-            <nav id="nav" class="nav">
-                <a href="#home" class="link">Home</a>
-                <a href="#projeto" class="link">Projetos</a>
-                <a href="#sobre" class="link">Sobre Mim</a>
-                <a href="#contato" class="link">Contato</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Sobre Mim</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -27,21 +45,21 @@
         <h1 class="titulo">Projeto 1 - Cards</h1>
 
         <div class="container">
-            <div class="botao" onclick="voltar()"><img src="img/chevron-left.svg" alt="seta para a esquerda"></div>
+            <div class="btn-left"><img src="img/chevron-left.svg" alt="seta para a esquerda"></div>
 
-            <div class="card" id="card1">
+            <div class="card">
                 <img src="img/fundo1.jpeg" alt="imagem de fundo" class="fundo">
                 <img src="img/perfil1.jpg" alt="imagem de perfil" class="perfil">
-                <img src="img/fav1.svg" alt="icone de favorito" onclick="fav(this)" class="fav">
+                <img src="img/fav1.svg" alt="icone de favorito" class="fav">
                 <div class="detalhes">
                     <h2>Luís Carlos</h2>
                     <p>Desenvolvedor Web</p>
                     <div class="classificacao">
-                        <img src="img/star1.svg" alt="estrela de classificação" onclick="classificacao(this)">
-                        <img src="img/star1.svg" alt="estrela de classificação" onclick="classificacao(this)">
-                        <img src="img/star1.svg" alt="estrela de classificação" onclick="classificacao(this)">
-                        <img src="img/star2.svg" alt="estrela de classificação" onclick="classificacao(this)">
-                        <img src="img/star2.svg" alt="estrela de classificação" onclick="classificacao(this)">
+                        <img src="img/star1.svg" alt="estrela de classificação" class="star">
+                        <img src="img/star1.svg" alt="estrela de classificação" class="star">
+                        <img src="img/star1.svg" alt="estrela de classificação" class="star">
+                        <img src="img/star2.svg" alt="estrela de classificação" class="star">
+                        <img src="img/star2.svg" alt="estrela de classificação" class="star">
                     </div>
                     <div class="info">
                         <p>Saiba Mais</p>
@@ -50,19 +68,19 @@
                 </div>
             </div>
 
-            <div class="card" id="card2" style="display: none">
+            <div class="card">
                 <img src="img/fundo2.jpeg" alt="imagem de fundo" class="fundo">
                 <img src="img/perfil2.jpg" alt="imagem de perfil" class="perfil">
-                <img src="img/fav2.svg" alt="icone de favorito" onclick="fav(this)" class="fav">
+                <img src="img/fav2.svg" alt="icone de favorito" class="fav">
                 <div class="detalhes">
                     <h2>Roberto Costa</h2>
                     <p>Designer UI & UX</p>
                     <div class="classificacao">
-                        <img src="img/star1.svg" alt="estrela de classificação" onclick="classificacao(this)">
-                        <img src="img/star1.svg" alt="estrela de classificação" onclick="classificacao(this)">
-                        <img src="img/star1.svg" alt="estrela de classificação" onclick="classificacao(this)">
-                        <img src="img/star1.svg" alt="estrela de classificação" onclick="classificacao(this)">
-                        <img src="img/star2.svg" alt="estrela de classificação" onclick="classificacao(this)">
+                        <img src="img/star1.svg" alt="estrela de classificação" class="star">
+                        <img src="img/star1.svg" alt="estrela de classificação" class="star">
+                        <img src="img/star1.svg" alt="estrela de classificação" class="star">
+                        <img src="img/star2.svg" alt="estrela de classificação" class="star">
+                        <img src="img/star2.svg" alt="estrela de classificação" class="star">
                     </div>
                     <div class="info">
                         <p>Saiba Mais</p>
@@ -71,19 +89,19 @@
                 </div>
             </div>
 
-            <div class="card" id="card3" style="display: none">
+            <div class="card">
                 <img src="img/fundo3.jpeg" alt="imagem de fundo" class="fundo">
                 <img src="img/perfil3.jpg" alt="imagem de perfil" class="perfil">
-                <img src="img/fav1.svg" alt="icone de favorito" onclick="fav(this)" class="fav">
+                <img src="img/fav1.svg" alt="icone de favorito" class="fav">
                 <div class="detalhes">
                     <h2>Fernando Souza</h2>
                     <p>Programador Java</p>
                     <div class="classificacao">
-                        <img src="img/star1.svg" alt="estrela de classificação" onclick="classificacao(this)">
-                        <img src="img/star1.svg" alt="estrela de classificação" onclick="classificacao(this)">
-                        <img src="img/star1.svg" alt="estrela de classificação" onclick="classificacao(this)">
-                        <img src="img/star1.svg" alt="estrela de classificação" onclick="classificacao(this)">
-                        <img src="img/star1.svg" alt="estrela de classificação" onclick="classificacao(this)">
+                        <img src="img/star1.svg" alt="estrela de classificação" class="star">
+                        <img src="img/star1.svg" alt="estrela de classificação" class="star">
+                        <img src="img/star1.svg" alt="estrela de classificação" class="star">
+                        <img src="img/star1.svg" alt="estrela de classificação" class="star">
+                        <img src="img/star1.svg" alt="estrela de classificação" class="star">
                     </div>
                     <div class="info">
                         <p>Saiba Mais</p>
@@ -92,27 +110,26 @@
                 </div>
             </div>
 
-            <div class="botao" onclick="avancar()"><img src="img/chevron-right.svg" alt="seta para a direita"></div>
+            <div class="btn-right"><img src="img/chevron-right.svg" alt="seta para a direita"></div>
         </div>
-
     </main>
 
     <footer>
-        <div class="foot">
-            <div class="logos">
-                <img src="img/logo.svg" alt="logo do site">
-                <div class="redes">
-                    <a href="#"><img src="img/gitHub.svg" alt="link do github"></a>
-                    <a href="#"><img src="img/linkedin.svg" alt="link do linkdin"></a>
-                </div>
-            </div>
-            <p>Site desenvolvido por João Guilherme</p>
-            <div class="copy">
-                <img src="img/copyright.svg" alt="copyright">
-                <p>Copyright 2023 João Dev</p>
+        <div class="logos">
+            <img src="img/logo.svg" alt="logo do site no roapé">
+            <div class="redes">
+                <a href="#" target="_blank"><img src="img/github.svg" alt="link do github"></a>
+                <a href="#" target="_blank"><img src="img/linkedin.svg" alt="link do linkedin"></a>
             </div>
         </div>
+        <p>Site desenvolvido por João Guilherme</p>
+        <div class="copy">
+            <img src="img/copyright.svg" alt="copyright">
+            <p>Copyright 2024 João Dev</p>
+        </div>
     </footer>
-    <script src="scriptP1.js"></script>
+
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/proj-01.js"></script>
 </body>
 </html>
